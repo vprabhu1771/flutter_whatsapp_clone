@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_clone/utils/ColorConstants.dart';
+import 'package:flutter_whatsapp_clone/widgets/CustomElevatedButton.dart';
 
 import '../widgets/PrivacyAndTerms.dart';
 
@@ -39,24 +40,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
                   ),
                   PrivacyAndTerms(),
-                  SizedBox(
-                    height: 42,
-                    width: MediaQuery.of(context).size.width - 100,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: ColorConstants.GREEN,
-                        foregroundColor: ColorConstants.CHARCOAL_BLACK,
-                        splashFactory: NoSplash.splashFactory,
-                        elevation: 0,
-                        shadowColor: Colors.transparent,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.zero, // Removes rounded corners
-                        ),
-                      ),
-                      child: Text("AGREE AND CONTINUE"),
-                    ),
-                  ),
+                  CustomElevatedButton(onPressed: (){}, title: "AGREE AND CONTINUE", ),
                   SizedBox(height: 50,),
                   Material(
                     color: ColorConstants.DEEP_BLUE_GRAY,
