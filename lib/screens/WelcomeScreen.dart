@@ -37,7 +37,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 children: [
                   Text(
                       'Welcome to Whatsapp',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                   PrivacyAndTerms(),
                   CustomElevatedButton(onPressed: (){}, title: "AGREE AND CONTINUE", ),
