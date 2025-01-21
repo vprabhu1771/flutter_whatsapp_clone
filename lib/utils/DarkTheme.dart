@@ -9,5 +9,17 @@ ThemeData darkTheme() {
       background: ColorConstants.BACKGROUND_DARK,
     ),
     scaffoldBackgroundColor: ColorConstants.BACKGROUND_DARK,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: ColorConstants.GREEN_DARK,
+              foregroundColor: ColorConstants.BACKGROUND_DARK,
+              splashFactory: NoSplash.splashFactory,
+              elevation: 0,
+              shadowColor: Colors.transparent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.zero, // Removes rounded corners
+              ),
+          )
+      )
   );
 }
