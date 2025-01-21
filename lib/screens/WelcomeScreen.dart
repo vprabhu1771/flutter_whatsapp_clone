@@ -27,7 +27,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
                     child: Image.asset(
                       'assets/images/circle.png',
-                      color: ColorConstants.GREEN,
+                      color: ColorConstants.GREEN_DARK,
                     )
                 ),
               )
