@@ -13,11 +13,11 @@ class PrivacyAndTerms extends StatelessWidget {
             textAlign: TextAlign.center,
             text: TextSpan(
                 text: 'Read our ',
-                style: TextStyle(color: ColorConstants.GRAY, height: 1.5,),
+                style: TextStyle(color: ColorConstants.GRAY_DARK, height: 1.5,),
                 children: [
-                  TextSpan(text: 'Privacy Policy ', style: TextStyle(color: ColorConstants.SKY_BLUE)),
+                  TextSpan(text: 'Privacy Policy ', style: TextStyle(color: ColorConstants.BLUE_DARK)),
                   TextSpan(text: 'Tap "Agree and continue" to accept the '),
-                  TextSpan(text: 'Terms of Services.', style: TextStyle(color: ColorConstants.SKY_BLUE)),
+                  TextSpan(text: 'Terms of Services.', style: TextStyle(color: ColorConstants.BLUE_DARK)),
                 ]
             )
         )
