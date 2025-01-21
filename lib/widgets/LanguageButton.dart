@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_whatsapp_clone/utils/CustomThemeExtension.dart';
+
 import '../utils/ColorConstants.dart';
 
 class LanguageButton extends StatelessWidget {
@@ -8,13 +10,13 @@ class LanguageButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: ColorConstants.DEEP_BLUE_GRAY,
+      color: context.theme.langBgColor,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
           onTap: () {},
           borderRadius: BorderRadius.circular(20),
           splashFactory: NoSplash.splashFactory,
-          highlightColor: ColorConstants.DARK_CYAN_BLACK,
+          highlightColor: context.theme.langHightlightColor,
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
@@ -27,7 +29,9 @@ class LanguageButton extends StatelessWidget {
                 SizedBox(width: 10,),
                 Text(
                   'English',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                    color: ColorConstants.GREEN_DARK,
+                  ),
                 ),
                 SizedBox(width: 10,),
                 Icon(

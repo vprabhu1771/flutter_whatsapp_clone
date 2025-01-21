@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_clone/utils/ColorConstants.dart';
+import 'package:flutter_whatsapp_clone/utils/CustomThemeExtension.dart';
 import 'package:flutter_whatsapp_clone/widgets/CustomElevatedButton.dart';
 import 'package:flutter_whatsapp_clone/widgets/LanguageButton.dart';
 
@@ -26,7 +27,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
                     child: Image.asset(
                       'assets/images/circle.png',
-                      color: ColorConstants.GREEN_DARK,
+                      color: context.theme.circleImageColor,
                     )
                 ),
               )
