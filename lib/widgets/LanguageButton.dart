@@ -22,7 +22,7 @@ class LanguageButton extends StatelessWidget {
               children: [
                 Icon(
                   Icons.language,
-                  color: ColorConstants.GREEN,
+                  color: ColorConstants.GREEN_DARK,
                 ),
                 SizedBox(width: 10,),
                 Text(
@@ -32,7 +32,7 @@ class LanguageButton extends StatelessWidget {
                 SizedBox(width: 10,),
                 Icon(
                   Icons.keyboard_arrow_down,
-                  color: ColorConstants.GREEN,
+                  color: ColorConstants.GREEN_DARK,
                 ),
               ],
             ),
