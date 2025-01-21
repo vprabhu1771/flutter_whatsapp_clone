@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_clone/utils/ColorConstants.dart';
 
+import 'CustomThemeExtension.dart';
+
 ThemeData lightTheme() {
   final ThemeData base = ThemeData.light();
 
@@ -20,6 +22,7 @@ ThemeData lightTheme() {
             borderRadius: BorderRadius.zero, // Removes rounded corners
           ),
       )
-    )
+    ),
+    extensions: [CustomThemeExtension.lightMode],
   );
 }
