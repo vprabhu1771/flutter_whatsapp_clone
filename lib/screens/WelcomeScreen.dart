@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_clone/utils/ColorConstants.dart';
 
+import '../widgets/PrivacyAndTerms.dart';
+
 class WelcomeScreen extends StatefulWidget {
 
   const WelcomeScreen({super.key});
@@ -17,13 +19,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       body: Column(
         children: [
           Expanded(
-              child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 50),
-                  child: Image.asset(
-                    'assets/images/circle.png',
-                    color: ColorConstants.GREEN,
-                  )
-              ),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+                    child: Image.asset(
+                      'assets/images/circle.png',
+                      color: ColorConstants.GREEN,
+                    )
+                ),
+              )
           ),
           SizedBox(height: 60,),
           Expanded(
