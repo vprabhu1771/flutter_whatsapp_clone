@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_clone/screens/WelcomeScreen.dart';
+import 'package:flutter_whatsapp_clone/utils/DarkTheme.dart';
+import 'package:flutter_whatsapp_clone/utils/LightTheme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: lightTheme(),
+      darkTheme: darkTheme(),
+      themeMode: ThemeMode.system,
       home: WelcomeScreen(),
     );
   }
